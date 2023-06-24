@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="nav">
+     <div class="right"><a>Library System</a></div>
+      <div class="left">
+       <a href="#books">Books</a>
+       <a href="#name">Register</a>
+       <a>Contact Us</a>
+       <a>Logout</a>
+     </div>
+    </nav>
+ <div class="table" id="books">
+    <div class="content"><h1>Books</h1>
+  <table class="main-table">
+    <tr>
+        <th>Book Id</th>
+        <th>Title</th>
+        <th>Author</th>
+        <th>Genre</th>
+        <th>Availability</th>
+    </tr>
+    <tr>
+        <td>1</td>
+        <td>
+            <a id="book-title" href="#">Book Title 1</a>
+            <table>
+                <tr><td>Publication Date: 2000</td></tr>
+                <tr><td>Page Count: 250</td></tr>
+               <tr><td>ISBN: 123-4567890123</td></tr> 
+            </table>
+        </td>
+        <td>Author Name 1</td>
+        <td>Genre 1</td>
+        <td>Available</td>
+    </tr>
+    <tr>
+        <td>2</td>
+        <td>
+            <a id="book-title" href="#">Book Title 2</a>
+            <table>
+                <tr><td>Publication Date: 2005</td></tr>
+                <tr><td>Page Count: 300</td></tr>
+               <tr><td>ISBN: 123-4567890456</td></tr> 
+            </table>
+        </td>
+        <td>Author Name 2</td>
+        <td>Genre 2</td>
+        <td> Not Available</td>
+    </tr>
+    <tr>
+        <td>3</td>
+        <td>
+            <a id="book-title" href="#">Book Title 3</a>
+            <table>
+                <tr><td>Publication Date: 2010</td></tr>
+                <tr><td>Page Count: 350</td></tr>
+               <tr><td>ISBN: 123-4567890789</td></tr> 
+            </table>
+        </td>
+        <td>Author Name 3</td>
+        <td>Genre 1</td>
+        <td>Available</td>
+    </tr>
+  </table>
+ </div>
+ </div>
+
+ <div class="form" id="name">
+   <form>
+    <h1>Register</h1>
+   <label for="fname">First Name:</label><br>
+   <input type="text"  name="fname" required><br><br>
+   <label for="lname">Last Name:</label><br>
+   <input type="text" id="lname" name="lname"><br><br>
+   <label for="DOB">Date Of Birth:</label><br>
+   <input type="date" id="DOB" name="DOB" value="dd/mm/yyy"><br><br>
+   <label for="age">Age:</label><br>
+   <input type="number" id="age" name="age" min="5"><br><br>
+   <label for="email">Email:</label><br>
+   <input type="email" id="email" name="email"><br><br>
+   <label for="password">Password:</label><br>
+   <input type="password" id="password" name="password" required><br><br>
+   <label for="confirm-pass">Confirm Password:</label><br>
+   <input type="password" id="confirm-pass" name="confirm-pass" required><br><br>
+   <input type="submit" value="Register" id="register">
+   </form>
+ </div>
+
+</body>
+</html>
